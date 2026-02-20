@@ -1,0 +1,438 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation [ref=e6]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: tel:+251 91 582 6885
+          - img [ref=e11]
+        - link "WhatsApp" [ref=e13] [cursor=pointer]:
+          - /url: https://wa.me/+251 91 582 6885
+          - generic [ref=e14]: WhatsApp
+      - generic [ref=e16]:
+        - link [ref=e17] [cursor=pointer]:
+          - /url: https://facebook.com/lotushoteljijiga
+          - img [ref=e18]
+        - link [ref=e20] [cursor=pointer]:
+          - /url: https://instagram.com/lotushoteljijiga
+          - img [ref=e21]
+    - generic [ref=e25]:
+      - button "Lotus Hotel" [ref=e26] [cursor=pointer]:
+        - img "Lotus Hotel" [ref=e27]
+      - button [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - img "Lotus top view" [ref=e33]
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - img
+            - text: Premium Hotel in Jijiga
+          - heading "Experience the Essence of Hospitality" [level=1] [ref=e41]
+          - paragraph [ref=e42]: Modern comfort meets warm Ethiopian hospitality. Premium rooms, authentic Somali cuisine, and world-class service in the heart of Jijiga.
+          - button "Book Now" [ref=e44] [cursor=pointer]
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - paragraph [ref=e47]: "4.8"
+              - paragraph [ref=e48]: Guest Rating
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: 50+
+              - paragraph [ref=e51]: Premium Rooms
+            - generic [ref=e52]:
+              - paragraph [ref=e53]: 24/7
+              - paragraph [ref=e54]: Service
+        - generic [ref=e56]:
+          - heading "Quick Booking" [level=3] [ref=e57]
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - generic [ref=e61]: Check In
+                - textbox [ref=e62]
+              - generic [ref=e63]:
+                - generic [ref=e64]: Check Out
+                - textbox [ref=e65]
+            - generic [ref=e66]:
+              - generic [ref=e67]:
+                - generic [ref=e68]: Adults
+                - spinbutton [ref=e69]: "2"
+              - generic [ref=e70]:
+                - generic [ref=e71]: Children
+                - spinbutton [ref=e72]: "0"
+            - button "Check Availability" [ref=e73] [cursor=pointer]
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]: Accommodations
+        - heading "Rooms & Suites" [level=2] [ref=e78]
+        - paragraph [ref=e79]: From comfortable standards to luxurious VIP suites, find your perfect stay
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - img "Standard Room" [ref=e83]
+            - generic [ref=e86]: ETB 2000/night
+          - generic [ref=e87]:
+            - heading "Standard Room" [level=3] [ref=e88]
+            - paragraph [ref=e89]: Cozy comfort with essential amenities
+            - generic [ref=e90]:
+              - generic [ref=e91]:
+                - img [ref=e92]
+                - text: 2 Guests
+              - generic [ref=e97]:
+                - img [ref=e98]
+                - text: 24 m²
+            - generic [ref=e100]:
+              - button "View Details" [ref=e101] [cursor=pointer]
+              - button "Book" [ref=e102] [cursor=pointer]
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - img "Deluxe Double" [ref=e105]
+            - generic [ref=e108]: ETB 2500/night
+          - generic [ref=e109]:
+            - heading "Deluxe Double" [level=3] [ref=e110]
+            - paragraph [ref=e111]: Guest favorite with signature Lotus comfort
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - img [ref=e114]
+                - text: 2 Guests
+              - generic [ref=e119]:
+                - img [ref=e120]
+                - text: 28 m²
+            - generic [ref=e122]:
+              - button "View Details" [ref=e123] [cursor=pointer]
+              - button "Book" [ref=e124] [cursor=pointer]
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - img "Twin Room" [ref=e127]
+            - generic [ref=e130]: ETB 2,400/night
+          - generic [ref=e131]:
+            - heading "Twin Room" [level=3] [ref=e132]
+            - paragraph [ref=e133]: Ideal for shared travel experiences
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - img [ref=e136]
+                - text: 2 Guests
+              - generic [ref=e141]:
+                - img [ref=e142]
+                - text: 26 m²
+            - generic [ref=e144]:
+              - button "View Details" [ref=e145] [cursor=pointer]
+              - button "Book" [ref=e146] [cursor=pointer]
+      - button "View All Rooms" [ref=e148] [cursor=pointer]:
+        - text: View All Rooms
+        - img
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e153]:
+          - heading "Swipe the Lotus Moments" [level=2] [ref=e154]
+          - paragraph [ref=e155]: Discover rooms, cuisine, and experiences with a simple swipe
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - button "Swipe" [ref=e158] [cursor=pointer]:
+              - img
+              - text: Swipe
+            - button "Grid" [ref=e159] [cursor=pointer]:
+              - img
+              - text: Grid
+          - button "View All" [ref=e160] [cursor=pointer]
+      - generic [ref=e163]:
+        - generic [ref=e164]:
+          - generic [ref=e166]:
+            - img "Standard Room" [ref=e167]
+            - generic [ref=e169]: SAVE
+            - generic [ref=e170]: SKIP
+            - generic [ref=e171]:
+              - generic [ref=e172]: Room
+              - heading "Standard Room" [level=3] [ref=e173]
+              - paragraph [ref=e174]: Cozy comfort for solo travelers
+              - paragraph [ref=e175]: Comfortable and well-appointed room perfect for solo travelers or couples. Features modern amenities and a cozy atmosphere.
+              - paragraph [ref=e176]: ETB 3,500 / night
+              - generic [ref=e177]:
+                - generic [ref=e178]:
+                  - img [ref=e179]
+                  - generic [ref=e183]: Free WiFi
+                - generic [ref=e184]:
+                  - img [ref=e185]
+                  - generic [ref=e189]: AC
+                - generic [ref=e190]:
+                  - img [ref=e191]
+                  - generic [ref=e193]: TV
+              - generic [ref=e194]:
+                - generic [ref=e195]: Queen Bed
+                - generic [ref=e196]: 24 m²
+                - generic [ref=e197]: City View
+              - generic [ref=e198]:
+                - button "Skip" [ref=e199] [cursor=pointer]:
+                  - img
+                  - text: Skip
+                - button "Details" [ref=e200] [cursor=pointer]:
+                  - img
+                  - text: Details
+                - button "Save" [ref=e201] [cursor=pointer]:
+                  - img
+                  - text: Save
+          - img "Deluxe Double" [ref=e203]
+          - img "Bariis Iskukaris" [ref=e205]
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - img [ref=e209]
+            - generic [ref=e211]: Swipe Left
+          - generic [ref=e212]:
+            - img [ref=e214]
+            - generic [ref=e216]: Swipe Right
+      - generic [ref=e218]: 1 / 8
+    - generic [ref=e221]:
+      - generic [ref=e222]:
+        - generic [ref=e223]:
+          - img
+          - text: Somali Cuisine
+        - heading "Authentic Somali Dining" [level=2] [ref=e224]
+        - paragraph [ref=e225]: Experience the rich flavors of Somali cuisine at our signature restaurant. From traditional Bariis Iskukaris to sweet Xalwo, every dish tells a story of our heritage.
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - img [ref=e228]
+            - paragraph [ref=e231]: Breakfast
+            - paragraph [ref=e232]: 6:30 AM - 10:00 AM
+          - generic [ref=e233]:
+            - img [ref=e234]
+            - paragraph [ref=e237]: Lunch & Dinner
+            - paragraph [ref=e238]: 12:00 PM - 10:00 PM
+        - generic [ref=e239]:
+          - button "View Full Menu" [ref=e240] [cursor=pointer]:
+            - text: View Full Menu
+            - img
+          - button "Reserve Table" [ref=e241] [cursor=pointer]
+      - generic [ref=e242]:
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - img "Canjeero with Maraq" [ref=e245]
+            - generic [ref=e248]: Popular
+          - generic [ref=e249]:
+            - heading "Canjeero with Maraq" [level=4] [ref=e250]
+            - paragraph [ref=e251]: ETB 350
+        - generic [ref=e252]:
+          - generic [ref=e253]:
+            - img "Malawah" [ref=e254]
+            - generic [ref=e257]: Popular
+          - generic [ref=e258]:
+            - heading "Malawah" [level=4] [ref=e259]
+            - paragraph [ref=e260]: ETB 280
+        - generic [ref=e261]:
+          - generic [ref=e262]:
+            - img "Ful Medames" [ref=e263]
+            - generic [ref=e266]: Popular
+          - generic [ref=e267]:
+            - heading "Ful Medames" [level=4] [ref=e268]
+            - paragraph [ref=e269]: ETB 250
+        - generic [ref=e270]:
+          - generic [ref=e271]:
+            - img "Continental Breakfast" [ref=e272]
+            - generic [ref=e275]: Popular
+          - generic [ref=e276]:
+            - heading "Continental Breakfast" [level=4] [ref=e277]
+            - paragraph [ref=e278]: ETB 400
+    - generic [ref=e280]:
+      - generic [ref=e281]:
+        - generic [ref=e282]: Amenities
+        - heading "Everything You Need" [level=2] [ref=e283]
+        - paragraph [ref=e284]: Premium facilities and services for a comfortable stay
+      - generic [ref=e285]:
+        - generic [ref=e286] [cursor=pointer]:
+          - img [ref=e287]
+          - heading "Free Wi-Fi" [level=3] [ref=e291]
+          - paragraph [ref=e292]: High-speed throughout
+        - generic [ref=e293] [cursor=pointer]:
+          - img [ref=e294]
+          - heading "Airport Transfer" [level=3] [ref=e298]
+          - paragraph [ref=e299]: On-time pickup
+        - generic [ref=e300] [cursor=pointer]:
+          - img [ref=e301]
+          - heading "Breakfast" [level=3] [ref=e303]
+          - paragraph [ref=e304]: Included with stay
+        - generic [ref=e305] [cursor=pointer]:
+          - img [ref=e306]
+          - heading "24/7 Front Desk" [level=3] [ref=e309]
+          - paragraph [ref=e310]: Always here for you
+        - generic [ref=e311] [cursor=pointer]:
+          - img [ref=e312]
+          - heading "Housekeeping" [level=3] [ref=e315]
+          - paragraph [ref=e316]: Daily service
+        - generic [ref=e317] [cursor=pointer]:
+          - img [ref=e318]
+          - heading "Secure Parking" [level=3] [ref=e320]
+          - paragraph [ref=e321]: Gated & monitored
+        - generic [ref=e322] [cursor=pointer]:
+          - img [ref=e323]
+          - heading "Fitness Center" [level=3] [ref=e329]
+          - paragraph [ref=e330]: Modern equipment
+        - generic [ref=e331] [cursor=pointer]:
+          - img [ref=e332]
+          - heading "Meeting Hall" [level=3] [ref=e336]
+          - paragraph [ref=e337]: Up to 100 guests
+      - button "View All Facilities" [ref=e339] [cursor=pointer]
+    - generic [ref=e342]:
+      - generic [ref=e343]:
+        - generic [ref=e344]:
+          - img
+          - text: Location
+        - heading "Find Us in Jijiga" [level=2] [ref=e345]
+        - paragraph [ref=e346]: Conveniently located on Main Street in Kebele 15, just minutes from Jijiga Airport and the Central Market.
+        - generic [ref=e347]:
+          - generic [ref=e348]:
+            - img [ref=e350]
+            - generic [ref=e353]:
+              - paragraph [ref=e354]: Address
+              - paragraph [ref=e355]: Main Street, Kebele 15
+              - paragraph [ref=e356]: Jijiga, Somali Region
+          - generic [ref=e357]:
+            - img [ref=e359]
+            - generic [ref=e361]:
+              - paragraph [ref=e362]: Phone
+              - paragraph [ref=e363]: +251 91 582 6885
+          - generic [ref=e364]:
+            - img [ref=e366]
+            - generic [ref=e369]:
+              - paragraph [ref=e370]: Email
+              - paragraph [ref=e371]: Mcmhotellots@gmail.com
+        - generic [ref=e372]:
+          - paragraph [ref=e373]: Nearby Landmarks
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - generic [ref=e376]:
+                - generic [ref=e377]: ✈️
+                - generic [ref=e378]: Jijiga Airport
+              - generic [ref=e379]: 5 min
+            - generic [ref=e380]:
+              - generic [ref=e381]:
+                - generic [ref=e382]: 🏪
+                - generic [ref=e383]: Central Market
+              - generic [ref=e384]: 3 min
+            - generic [ref=e385]:
+              - generic [ref=e386]:
+                - generic [ref=e387]: 🎓
+                - generic [ref=e388]: Jigjiga University
+              - generic [ref=e389]: 10 min
+            - generic [ref=e390]:
+              - generic [ref=e391]:
+                - generic [ref=e392]: 🏛️
+                - generic [ref=e393]: Somali Regional Government
+              - generic [ref=e394]: 7 min
+      - generic [ref=e395]:
+        - generic [ref=e396]:
+          - iframe [ref=e397]
+          - generic:
+            - generic:
+              - generic:
+                - img
+        - generic [ref=e398]:
+          - generic [ref=e402]: Open 24/7
+          - link "Directions" [ref=e403] [cursor=pointer]:
+            - /url: https://www.google.com/maps/dir/?api=1&destination=9.3584,42.8
+            - button "Directions" [ref=e404]:
+              - img
+              - text: Directions
+    - generic [ref=e406]:
+      - generic [ref=e407]:
+        - generic [ref=e408]:
+          - img
+          - text: Reviews
+        - heading "What Our Guests Say" [level=2] [ref=e409]
+      - generic [ref=e410]:
+        - generic [ref=e411]:
+          - generic [ref=e412]:
+            - img [ref=e413]
+            - img [ref=e415]
+            - img [ref=e417]
+            - img [ref=e419]
+            - img [ref=e421]
+          - paragraph [ref=e423]: "\"Clean, calm, and reliable. The bed was firm, the shower was hot, and the team was kind. Exactly what I needed after a long trip. The Somali breakfast was amazing!\""
+          - generic [ref=e424]:
+            - generic [ref=e425]:
+              - paragraph [ref=e426]: Amina H.
+              - paragraph [ref=e427]: Deluxe Double
+            - generic [ref=e428]:
+              - img
+              - text: Verified
+        - generic [ref=e429]:
+          - generic [ref=e430]:
+            - img [ref=e431]
+            - img [ref=e433]
+            - img [ref=e435]
+            - img [ref=e437]
+            - img [ref=e439]
+          - paragraph [ref=e441]: "\"Best value in Jijiga. I've tried a few places. Lotus is the most consistent—great Wi-Fi, quiet nights, good food. The Stay Experience Designer is a game changer!\""
+          - generic [ref=e442]:
+            - generic [ref=e443]:
+              - paragraph [ref=e444]: Yusuf M.
+              - paragraph [ref=e445]: Standard Room
+            - generic [ref=e446]:
+              - img
+              - text: Verified
+        - generic [ref=e447]:
+          - generic [ref=e448]:
+            - img [ref=e449]
+            - img [ref=e451]
+            - img [ref=e453]
+            - img [ref=e455]
+            - img [ref=e457]
+          - paragraph [ref=e459]: "\"They actually care. I arrived late and they had dinner waiting. Small details make the difference. The staff remembered my name throughout my stay.\""
+          - generic [ref=e460]:
+            - generic [ref=e461]:
+              - paragraph [ref=e462]: Sarah K.
+              - paragraph [ref=e463]: VIP Suite
+            - generic [ref=e464]:
+              - img
+              - text: Verified
+  - contentinfo [ref=e465]:
+    - generic [ref=e467]:
+      - generic [ref=e468]:
+        - img "Lotus Hotel" [ref=e469]
+        - paragraph [ref=e470]: Essence In Hospitality
+        - paragraph [ref=e471]: Experience the perfect blend of modern comfort and warm Ethiopian hospitality in the heart of Jijiga...
+      - generic [ref=e472]:
+        - heading "Quick Links" [level=4] [ref=e473]
+        - list [ref=e474]:
+          - listitem [ref=e475]:
+            - button "Rooms" [ref=e476] [cursor=pointer]
+          - listitem [ref=e477]:
+            - button "Restaurant" [ref=e478] [cursor=pointer]
+          - listitem [ref=e479]:
+            - button "Facilities" [ref=e480] [cursor=pointer]
+          - listitem [ref=e481]:
+            - button "Gallery" [ref=e482] [cursor=pointer]
+          - listitem [ref=e483]:
+            - button "Events" [ref=e484] [cursor=pointer]
+          - listitem [ref=e485]:
+            - button "About" [ref=e486] [cursor=pointer]
+      - generic [ref=e487]:
+        - heading "Contact Us" [level=4] [ref=e488]
+        - list [ref=e489]:
+          - listitem [ref=e490]:
+            - img [ref=e491]
+            - text: Main Street, Kebele 15, Jijiga
+          - listitem [ref=e494]:
+            - link "+251 91 582 6885" [ref=e495] [cursor=pointer]:
+              - /url: tel:+251 91 582 6885
+              - img [ref=e496]
+              - text: +251 91 582 6885
+          - listitem [ref=e498]:
+            - link "Mcmhotellots@gmail.com" [ref=e499] [cursor=pointer]:
+              - /url: mailto:Mcmhotellots@gmail.com
+              - img [ref=e500]
+              - text: Mcmhotellots@gmail.com
+      - generic [ref=e503]:
+        - heading "Newsletter" [level=4] [ref=e504]
+        - paragraph [ref=e505]: Subscribe for special offers and updates
+        - generic [ref=e506]:
+          - textbox "Your email" [ref=e507]
+          - button [ref=e508] [cursor=pointer]:
+            - img
+    - generic [ref=e510]:
+      - paragraph [ref=e511]: © 2026 Lotus Hotel. All rights reserved.
+      - generic [ref=e512]:
+        - button "Privacy Policy" [ref=e513] [cursor=pointer]
+        - button "Terms of Service" [ref=e514] [cursor=pointer]
+```

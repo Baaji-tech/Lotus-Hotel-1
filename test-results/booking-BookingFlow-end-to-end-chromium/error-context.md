@@ -4,6 +4,9 @@
 - generic:
   - generic:
     - generic:
+      - link:
+        - /url: "#main-content"
+        - text: Skip to content
       - navigation:
         - generic:
           - generic:
@@ -134,7 +137,7 @@
                 - generic:
                   - img
                   - generic:
-                    - generic: ETB 3,800/night
+                    - generic: ETB 2,400/night
                 - generic:
                   - heading [level=3]: Twin Room
                   - paragraph: Ideal for shared travel experiences
