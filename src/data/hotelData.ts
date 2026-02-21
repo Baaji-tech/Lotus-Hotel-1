@@ -1,24 +1,24 @@
 import type { Room, VibeOption, StayAddOn, Experience, MenuCategory, PaymentConfig, HotelInfo, Review, NearbyPlace, GalleryImage, EventPackage, NavItem, RestaurantHours, SeatingOption } from '../types';
 
 export const hotelInfo: HotelInfo = {
-  name: 'Lotus Hotel',
-  nameSomali: 'Hotelka Lotus',
-  tagline: 'Essence In Hospitality',
-  description: 'Experience the perfect blend of modern comfort and warm Ethiopian hospitality in the heart of Jijiga. Lotus Hotel offers premium accommodations, authentic Somali cuisine, and world-class service for business and leisure travelers alike.',
-  address: 'Main Street, Kebele 15',
+  name: 'Hoyga Jiifka Ee Shaahid Hotel',
+  nameSomali: 'Hoyga Jiifka Ee Shaahid',
+  tagline: 'Your Comfort, Our Priority',
+  description: 'Experience the perfect blend of modern comfort and warm Somali hospitality in the heart of Jijiga. Hoyga Jiifka Ee Shaahid Hotel offers premium accommodations, authentic Somali cuisine, and world-class service for business and leisure travelers alike.',
+  address: '9R26+G2Q, Jijiga',
   city: 'Jijiga',
   region: 'Somali Region',
   country: 'Ethiopia',
   phone: '+251 91 582 6885',
   phone2: '+251 91 582 6886',
-  whatsapp: '+251 91 582 6885',
-  email: 'Mcmhotellots@gmail.com',
-  website: 'https://www.mcmhotellotus.com',
-  coordinates: { lat: 9.3584, lng: 42.8000 },
+  whatsapp: '251976040457',
+  email: 'info@shaahidhotel.com',
+  website: 'https://www.shaahidhotel.com',
+  coordinates: { lat: 9.350164523458709, lng: 42.81108139331711 },
   socialMedia: {
-    facebook: 'https://facebook.com/lotushoteljijiga',
-    instagram: 'https://instagram.com/lotushoteljijiga',
-    telegram: 'https://t.me/lotushoteljijiga'
+    facebook: 'https://facebook.com/shaahidhotel',
+    instagram: 'https://instagram.com/shaahidhotel',
+    telegram: 'https://t.me/shaahidhotel'
   },
   checkInTime: '14:00',
   checkOutTime: '12:00',
@@ -51,7 +51,7 @@ export const rooms: Room[] = [
     size: '24 m²',
     maxGuests: 2,
     bedType: '1 Queen Bed',
-    images: ['/lotus_room1.jpg', '/lotus_standard.jpg', '/lotus_room2.jpg'],
+    images: ['/Normal Single Room.jpg'],
     amenities: [
       { id: 'wifi', name: 'Free Wi-Fi', icon: 'Wifi', category: 'tech' },
       { id: 'ac', name: 'Air Conditioning', icon: 'Wind', category: 'comfort' },
@@ -79,14 +79,14 @@ export const rooms: Room[] = [
     fromPriceETB: 2800,
     priceRangeETB: { min: 2800, max: 3600 },
     nameSomali: 'Deluxe Laba Qof',
-    description: 'Our most popular room featuring a spacious layout with premium furnishings. The signature Lotus Hotel experience with our iconic red accents and exceptional comfort.',
-    shortDescription: 'Guest favorite with signature Lotus comfort',
+    description: 'Our most popular room featuring a spacious layout with premium furnishings. The signature Shaahid Hotel experience with our iconic red accents and exceptional comfort.',
+    shortDescription: 'Guest favorite with signature Shaahid comfort',
     pricePerNight: 2800,
     priceUSD: 78,
     size: '28 m²',
     maxGuests: 2,
     bedType: '1 King Bed',
-    images: ['/lotus_standard.jpg', '/lotus_room1.jpg', '/lotus_suite.jpg'],
+    images: ['/Normal Single Room.jpg'],
     amenities: [
       { id: 'wifi', name: 'Free Wi-Fi', icon: 'Wifi', category: 'tech' },
       { id: 'ac', name: 'Air Conditioning', icon: 'Wind', category: 'comfort' },
@@ -123,7 +123,7 @@ export const rooms: Room[] = [
     size: '26 m²',
     maxGuests: 2,
     bedType: '2 Single Beds',
-    images: ['/lotus_room2.jpg', '/lotus_room1.jpg', '/lotus_standard.jpg'],
+    images: ['/Normal Single Room.jpg'],
     amenities: [
       { id: 'wifi', name: 'Free Wi-Fi', icon: 'Wifi', category: 'tech' },
       { id: 'ac', name: 'Air Conditioning', icon: 'Wind', category: 'comfort' },
@@ -158,7 +158,7 @@ export const rooms: Room[] = [
     size: '45 m²',
     maxGuests: 3,
     bedType: '1 King Bed + Sofa Bed',
-    images: ['/lotus_suite.jpg', '/lotus_room2.jpg', '/lotus_reception.jpg'],
+    images: ['/Normal Single Room.jpg'],
     amenities: [
       { id: 'wifi', name: 'Free Wi-Fi', icon: 'Wifi', category: 'tech' },
       { id: 'ac', name: 'Air Conditioning', icon: 'Wind', category: 'comfort' },
@@ -277,7 +277,7 @@ export const restaurantMenu: MenuCategory[] = [
       { id: 'chicken-biryani', name: 'Chicken Biryani', description: 'Aromatic basmati rice with spiced chicken and herbs', price: 750, isAvailable: true, isVegetarian: false, isSpicy: true, isPopular: true, tags: ['international', 'spicy'] },
       { id: 'suqaar-beef', name: 'Suqaar (Beef)', nameSomali: 'Suqaar (Hilib)', description: 'Tender beef cubes sautéed with onions, peppers, and Somali spices', price: 700, isAvailable: true, isVegetarian: false, isSpicy: true, isPopular: true, tags: ['traditional', 'halal'] },
       { id: 'club-sandwich', name: 'Club Sandwich', description: 'Triple-layered sandwich with chicken, bacon, lettuce, and tomato', price: 550, isAvailable: true, isVegetarian: false, isSpicy: false, tags: ['international', 'sandwich'] },
-      { id: 'burger', name: 'Lotus Burger', description: 'Beef patty with cheese, lettuce, tomato, and special sauce', price: 600, isAvailable: true, isVegetarian: false, isSpicy: false, tags: ['international', 'burger'] },
+      { id: 'burger', name: 'Shaahid Burger', description: 'Beef patty with cheese, lettuce, tomato, and special sauce', price: 600, isAvailable: true, isVegetarian: false, isSpicy: false, tags: ['international', 'burger'] },
       { id: 'pizza', name: 'Somali Pizza', description: 'Thin crust pizza with halal toppings and Somali spices', price: 650, isAvailable: true, isVegetarian: true, isSpicy: false, tags: ['international', 'pizza'] },
       { id: 'spaghetti', name: 'Spaghetti Somali', description: 'Pasta with Somali-spiced meat sauce and vegetables', price: 580, isAvailable: true, isVegetarian: false, isSpicy: true, tags: ['fusion', 'pasta'] },
       { id: 'suqaar-chicken', name: 'Suqaar (Chicken)', nameSomali: 'Suqaar (Digaag)', description: 'Succulent chicken pieces with traditional Somali seasoning', price: 600, isAvailable: true, isVegetarian: false, isSpicy: false, tags: ['traditional', 'halal'] },
@@ -328,20 +328,20 @@ export const restaurantMenu: MenuCategory[] = [
 ];
 
 export const paymentMethods: PaymentConfig[] = [
-  { method: 'cbe', name: 'CBE', nameAmharic: 'ሲቢኢ', logo: '/Commercial Bank of Ethiopia.png', instructions: 'Use CBE Birr mobile banking or app. Merchant code: LOTUS123', isAvailable: true, processingFee: 0 },
-  { method: 'ebirr', name: 'Ebirr', nameAmharic: 'እብር', logo: '/E-birr.png', instructions: 'Pay using Ebirr mobile money service. Use merchant code: LOTUS789', isAvailable: true, processingFee: 0 },
+  { method: 'cbe', name: 'CBE', nameAmharic: 'ሲቢኢ', logo: '/Commercial Bank of Ethiopia.png', instructions: 'Bank Account: 1000518679728. Use CBE Birr mobile banking or app.', isAvailable: true, processingFee: 0 },
+  { method: 'ebirr', name: 'Ebirr', nameAmharic: 'እብር', logo: '/E-birr.png', instructions: 'Pay using Ebirr mobile money service. Merchant: 400193', isAvailable: true, processingFee: 0 },
   { method: 'hellocash', name: 'HelloCash', logo: '/hellocash.jpeg', instructions: 'Pay using HelloCash mobile wallet. Follow on-screen instructions.', isAvailable: true, processingFee: 0 },
   { method: 'telebirr', name: 'Telebirr', nameAmharic: 'ቴሌብር', logo: '/TeleBirr.png', instructions: 'Pay using Telebirr mobile money. Enter your phone number to receive a payment request.', isAvailable: true, processingFee: 0 },
   { method: 'abyssinia-bank', name: 'Abyssinia Bank', logo: '/Bank of Abyssinia.png', instructions: 'Transfer to Abyssinia Bank account. Include booking reference in the transfer description.', isAvailable: true, processingFee: 0 },
   // Legacy/backup methods left for compatibility (hidden in UI if desired)
   // { method: 'amole', name: 'Amole', nameAmharic: 'አሞሌ', logo: '/amole-logo.png', instructions: 'Pay using Dashen Bank Amole. Use merchant ID: LOTUS_HOTEL', isAvailable: false, processingFee: 0 },
   // { method: 'ethswitch', name: 'EthSwitch (Card)', nameAmharic: 'ኢትስዊች', logo: '/ethswitch-logo.png', instructions: 'Pay with your Ethiopian debit card through EthSwitch network.', isAvailable: false, processingFee: 25 },
-  // { method: 'bank-transfer', name: 'Bank Transfer', nameAmharic: 'ባንክ ዝውውር', logo: '/bank-logo.png', instructions: 'Transfer to: Commercial Bank of Ethiopia, Account: 1000XXXXXX, Name: Lotus Hotel Jijiga. Please include your booking reference.', isAvailable: false, processingFee: 0 }
+  // { method: 'bank-transfer', name: 'Bank Transfer', nameAmharic: 'ባንክ ዝውውር', logo: '/bank-logo.png', instructions: 'Transfer to: Commercial Bank of Ethiopia, Account: 1000XXXXXX, Name: Shaahid Hotel Jijiga. Please include your booking reference.', isAvailable: false, processingFee: 0 }
 ];
 
 export const reviews: Review[] = [
   { id: '1', name: 'Amina H.', rating: 5, comment: 'Clean, calm, and reliable. The bed was firm, the shower was hot, and the team was kind. Exactly what I needed after a long trip. The Somali breakfast was amazing!', date: '2024-01-15', verified: true, roomType: 'Deluxe Double' },
-  { id: '2', name: 'Yusuf M.', rating: 5, comment: 'Best value in Jijiga. I\'ve tried a few places. Lotus is the most consistent—great Wi-Fi, quiet nights, good food. The Stay Experience Designer is a game changer!', date: '2024-01-10', verified: true, roomType: 'Standard Room' },
+  { id: '2', name: 'Yusuf M.', rating: 5, comment: 'Best value in Jijiga. I\'ve tried a few places. Shaahid is the most consistent—great Wi-Fi, quiet nights, good food. The Stay Experience Designer is a game changer!', date: '2024-01-10', verified: true, roomType: 'Standard Room' },
   { id: '3', name: 'Sarah K.', rating: 5, comment: 'They actually care. I arrived late and they had dinner waiting. Small details make the difference. The staff remembered my name throughout my stay.', date: '2024-01-05', verified: true, roomType: 'VIP Suite' },
   { id: '4', name: 'Dr. Mohamed A.', rating: 5, comment: 'Perfect for business travel. The high-speed WiFi and quiet rooms made it easy to work. The airport pickup service was punctual and professional.', date: '2023-12-28', verified: true, roomType: 'Deluxe Double' },
   { id: '5', name: 'Fatima O.', rating: 4, comment: 'Beautiful hotel with authentic Somali hospitality. The restaurant serves the best bariis iskukaris in Jijiga. Will definitely return!', date: '2023-12-20', verified: true, roomType: 'Twin Room' }
@@ -356,7 +356,7 @@ export const nearbyPlaces: NearbyPlace[] = [
 ];
 
 export const galleryImages: GalleryImage[] = [
-  { id: '1', src: '/lotus_reception.jpg', alt: 'Lotus Hotel Reception', category: 'exterior', caption: 'Welcome to Lotus Hotel' },
+  { id: '1', src: '/lotus_reception.jpg', alt: 'Shaahid Hotel Reception', category: 'exterior', caption: 'Welcome to Shaahid Hotel' },
   { id: '2', src: '/lotus_standard.jpg', alt: 'Deluxe Room', category: 'rooms', caption: 'Deluxe Double Room' },
   { id: '3', src: '/lotus_room1.jpg', alt: 'Standard Room', category: 'rooms', caption: 'Standard Room' },
   { id: '4', src: '/lotus_room2.jpg', alt: 'VIP Suite Living Area', category: 'rooms', caption: 'VIP Suite' },
@@ -392,8 +392,8 @@ export const hotelSettings = {
   currency: 'ETB' as const,
   usdEstimateEnabled: true,
   usdExchangeRate: 55,
-  bankTransferInstructions: 'Commercial Bank of Ethiopia\nAccount Name: Lotus Hotel Jijiga\nAccount Number: 1000XXXXXX\nBranch: Jijiga Main Branch\n\nPlease include your booking reference in the transfer description.',
-  cancellationPolicy: 'Free cancellation up to 24 hours before check-in. Cancellations within 24 hours are subject to one night\'s charge.',
+  bankTransferInstructions: 'Commercial Bank of Ethiopia\nAccount Name: Hoyga Jiifka Ee Shaahid Hotel\nAccount Number: 1000518679728\nBranch: Jijiga Main Branch\n\nPlease include your booking reference in the transfer description.',
+  cancellationPolicy: 'Free cancellation up to 24h before check-in.',
   privacyPolicy: 'We respect your privacy and protect your personal information in accordance with Ethiopian data protection laws.',
-  termsOfService: 'By booking with Lotus Hotel, you agree to our terms and conditions including our cancellation and payment policies.'
+  termsOfService: 'By booking with Hoyga Jiifka Ee Shaahid Hotel, you agree to our terms and conditions including our cancellation and payment policies.'
 };

@@ -2,6 +2,8 @@ import { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useInView, useReducedMotion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { rooms } from '@/data/hotelData';
+import { Bed, Users, Maximize, ArrowRight } from 'lucide-react';
 
 type CountUpProps = {
   to: number;
@@ -60,7 +62,7 @@ export default function AboutPage({ onNavigate }: Props) {
       {/* Hero */}
       <section ref={heroRef} className="relative h-screen min-h-[640px] flex items-center">
         <motion.div
-          style={{ scale, backgroundImage: 'url(/lotushotel-topview.jpg)', backgroundPosition: 'center', backgroundSize: 'cover' }}
+          style={{ scale, backgroundImage: 'url(/IMG-20251003-WA0007.jpg)', backgroundPosition: 'center', backgroundSize: 'cover' }}
           className="absolute inset-0"
           aria-hidden
         />
@@ -99,7 +101,7 @@ export default function AboutPage({ onNavigate }: Props) {
           >
             <Badge className="bg-[#D4A14C]/10 text-[#D4A14C] border-[#D4A14C]/20 mb-4">Our Story</Badge>
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Story</h2>
-            <p className="text-[#B8C0D0] leading-relaxed">Lotus Hotel was created to redefine hospitality in Jijiga — blending contemporary design, professional service, and authentic cultural warmth. For over a decade, we have welcomed thousands of guests seeking comfort, quality, and trust.</p>
+            <p className="text-[#B8C0D0] leading-relaxed">Shaahid Hotel was created to redefine hospitality in Jijiga — blending contemporary design, professional service, and authentic cultural warmth. For over a decade, we have welcomed thousands of guests seeking comfort, quality, and trust.</p>
           </motion.div>
 
           <motion.div
@@ -109,7 +111,7 @@ export default function AboutPage({ onNavigate }: Props) {
             viewport={{ once: true }}
             className="rounded-2xl overflow-hidden"
           >
-            <img src="/lotushotel-topview.jpg" alt="Lotus Hotel reception" className="w-full h-96 object-cover rounded-2xl shadow-lg" />
+            <img src="/IMG-20251003-WA0013.jpg" alt="Shaahid Hotel reception" className="w-full h-96 object-cover rounded-2xl shadow-lg" />
           </motion.div>
         </div>
       </section>
@@ -154,7 +156,7 @@ export default function AboutPage({ onNavigate }: Props) {
             { title: 'Prime Location', desc: 'Steps from Jijiga’s best destinations.' },
             { title: 'Authentic Dining Experience', desc: 'Local & international cuisine, chef-driven menus.' },
             { title: 'Designed for Business & Leisure', desc: 'Conference facilities, fast Wi‑Fi, tailored services.' },
-            { title: 'Commitment to Excellence', desc: 'Attention to detail in every guest moment.' }
+          { title: 'Commitment to Excellence', desc: 'Attention to detail in every guest moment.' }
           ].map((blk) => (
             <div key={blk.title} className="bg-[#07121a] p-6 rounded-2xl hover:shadow-lg transition-shadow duration-300 border border-transparent hover:border-[#D4A14C]/20">
               <div className="w-12 h-12 rounded-full bg-[#D4A14C]/10 flex items-center justify-center mb-4 text-[#D4A14C] font-semibold">•</div>
@@ -162,6 +164,49 @@ export default function AboutPage({ onNavigate }: Props) {
               <p className="text-[#B8C0D0] text-sm">{blk.desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Rooms Preview */}
+      <section className="container mx-auto px-6 lg:px-8 py-16">
+        <Badge className="bg-[#D4A14C]/10 text-[#D4A14C] border-[#D4A14C]/20 mb-4">Our Rooms</Badge>
+        <h3 className="text-3xl font-bold mb-8">Accommodations for Every Need</h3>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {rooms.slice(0, 4).map((room) => (
+            <motion.div
+              key={room.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-[#07121a] rounded-2xl overflow-hidden border border-[#D4A14C]/10 hover:border-[#D4A14C]/30 transition-colors"
+            >
+              <div className="h-48 overflow-hidden">
+                <img src={room.images[0]} alt={room.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-4">
+                <h4 className="font-semibold text-lg mb-2">{room.name}</h4>
+                <p className="text-[#B8C0D0] text-sm mb-3">{room.shortDescription}</p>
+                <div className="flex items-center gap-4 text-sm text-[#B8C0D0] mb-3">
+                  <span className="flex items-center gap-1"><Maximize className="w-4 h-4" /> {room.size}</span>
+                  <span className="flex items-center gap-1"><Users className="w-4 h-4" /> {room.maxGuests}</span>
+                  <span className="flex items-center gap-1"><Bed className="w-4 h-4" /> {room.bedType}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <span className="text-[#D4A14C] font-bold text-lg">ETB {room.pricePerNight.toLocaleString()}</span>
+                    <span className="text-[#B8C0D0] text-sm"> /night</span>
+                  </div>
+                  <Button size="sm" variant="outline" className="border-[#D4A14C]/30 text-[#D4A14C] hover:bg-[#D4A14C]/10" onClick={() => onNavigate ? onNavigate('rooms') : window.location.assign('?page=rooms')}>
+                    <ArrowRight className="w-4 h-4 ml-1" />
+                  </Button>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        <div className="text-center mt-8">
+          <Button className="px-8 py-3" onClick={() => onNavigate ? onNavigate('rooms') : window.location.assign('?page=rooms')}>View All Rooms & Amenities</Button>
         </div>
       </section>
 
