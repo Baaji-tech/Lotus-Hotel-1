@@ -51,7 +51,7 @@ export default function RestaurantPage() {
       }
     }
 
-    const message = encodeURIComponent(`Hello Lotus Hotel, I'd like to reserve a table.${partyText}${dtText}${itemsText}\n\nPlease confirm availability and final price. Thank you.`);
+    const message = encodeURIComponent(`Hello Shaahid Hotel, I'd like to reserve a table.${partyText}${dtText}${itemsText}\n\nPlease confirm availability and final price. Thank you.`);
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   }
 

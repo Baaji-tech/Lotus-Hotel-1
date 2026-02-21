@@ -8,7 +8,7 @@ export const roomGalleryItems: SwipeCardData[] = [
     title: 'Standard Room',
     subtitle: 'Cozy comfort for solo travelers',
     caption: 'Comfortable and well-appointed room perfect for solo travelers or couples. Features modern amenities and a cozy atmosphere.',
-    image: '/lotus_room1.jpg',
+    image: '/Normal Single Room.jpg',
     price: 3500,
     amenities: [
       { icon: 'Wifi', name: 'Free WiFi' },
@@ -23,8 +23,8 @@ export const roomGalleryItems: SwipeCardData[] = [
     type: 'room',
     title: 'Deluxe Double',
     subtitle: 'Our guest favorite',
-    caption: 'Our most popular room featuring a spacious layout with premium furnishings and the signature Lotus Hotel experience.',
-    image: '/lotus_standard.jpg',
+    caption: 'Our most popular room featuring a spacious layout with premium furnishings and the signature Shaahid Hotel experience.',
+    image: '/Normal Single Room.jpg',
     price: 4200,
     amenities: [
       { icon: 'Wifi', name: 'Free WiFi' },
@@ -41,7 +41,7 @@ export const roomGalleryItems: SwipeCardData[] = [
     title: 'Twin Room',
     subtitle: 'Perfect for colleagues',
     caption: 'Two comfortable single beds with all the amenities you need for a productive stay. Ideal for friends or colleagues.',
-    image: '/lotus_room2.jpg',
+    image: '/Normal Single Room.jpg',
     price: 3800,
     amenities: [
       { icon: 'Wifi', name: 'Free WiFi' },
@@ -57,7 +57,7 @@ export const roomGalleryItems: SwipeCardData[] = [
     title: 'VIP Suite',
     subtitle: 'Ultimate luxury experience',
     caption: 'Our most luxurious accommodation featuring a separate living area, premium amenities, and panoramic city views.',
-    image: '/lotus_suite.jpg',
+    image: '/Normal Single Room.jpg',
     price: 6500,
     amenities: [
       { icon: 'Wifi', name: 'Free WiFi' },

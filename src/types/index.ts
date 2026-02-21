@@ -1,4 +1,4 @@
-// Lotus Hotel - Complete Type Definitions
+// Shaahid Hotel - Complete Type Definitions
 
 export interface Room {
   id: string;

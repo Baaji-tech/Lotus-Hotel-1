@@ -107,7 +107,7 @@ export function SavedGallery({ onBookRoom, onReserveTable, onBack }: SavedGaller
             Back
           </Button>
           <h1 className="text-3xl lg:text-4xl font-bold text-white">My Saved Items</h1>
-          <p className="text-[#B8C0D0] mt-2">Your curated collection of Lotus Hotel favorites</p>
+          <p className="text-[#B8C0D0] mt-2">Your curated collection of Shaahid Hotel favorites</p>
         </div>
         
         {savedItems.length > 0 && (

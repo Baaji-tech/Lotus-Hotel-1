@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
+import type { Resolver } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
   X,
@@ -35,8 +36,8 @@ import { toast } from 'sonner';
 import type { Booking, GuestInfo, PaymentMethod, Room } from '@/types';
 import { hotelInfo, hotelSettings, paymentMethods, rooms } from '@/data/hotelData';
 
-const STORAGE_KEY = 'lotus_bookings_v1';
-const PROOFS_KEY = 'lotus_payment_proofs_v1';
+const STORAGE_KEY = 'shaahid_bookings_v1';
+const PROOFS_KEY = 'shaahid_payment_proofs_v1';
 const MAX_LOCAL_RECEIPT_BYTES = 750 * 1024; // 750KB to avoid localStorage crash
 
 // ✅ Use this WhatsApp number for now (Ethiopia format, digits only for wa.me)
@@ -73,17 +74,18 @@ function uid(prefix = 'LTS') {
 }
 
 // Sequential booking reference stored in localStorage to produce human-friendly refs
-const BOOKING_SEQ_KEY = 'lotus_booking_seq_v1';
+const BOOKING_SEQ_KEY = 'shaahid_booking_seq_v1';
 function getNextBookingReference(): string {
+  // Human-friendly sequential ref (demo). Example: SHAHID-JJG-00042
   try {
     const raw = localStorage.getItem(BOOKING_SEQ_KEY);
     const cur = raw ? Number(raw) || 0 : 0;
     const next = cur + 1;
     localStorage.setItem(BOOKING_SEQ_KEY, String(next));
-    return `LOTUS-MLU${String(next).padStart(5, '20261-0')}`;
-  } catch (e) {
-    // fallback to uid if localStorage not available
-    return uid('LOTUS');
+    return `SHAHID-JJG-${String(next).padStart(5, '0')}`;
+  } catch {
+    // Fallback if localStorage is blocked
+    return uid('SHAHID');
   }
 }
 
@@ -132,8 +134,8 @@ const bookingSchema = z.object({
   roomId: z.string().min(1),
   checkIn: z.string().min(1),
   checkOut: z.string().min(1),
-  adults: z.number().int().min(1).max(10),
-  children: z.number().int().min(0).max(10),
+  adults: z.coerce.number().int().min(1).max(10),
+  children: z.coerce.number().int().min(0).max(10),
   firstName: z.string().min(1),
   lastName: z.string().min(1),
   email: z.string().email(),
@@ -186,7 +188,7 @@ export function BookingFlow({
   const [proof, setProof] = useState<PaymentProof | null>(null);
 
   const form = useForm<BookingForm>({
-    resolver: zodResolver(bookingSchema),
+    resolver: zodResolver(bookingSchema) as unknown as Resolver<BookingForm>,
     defaultValues: {
       roomId: initialRoom?.id ?? rooms[0]?.id ?? '',
       checkIn: '',
@@ -457,7 +459,7 @@ export function BookingFlow({
       paymentMethods.find((m) => m.method === (selectedPaymentConfig?.method ?? 'telebirr'))?.name ?? 'Payment';
 
     const msg = [
-      `Hello Lotus Hotel, I want to pay the deposit.`,
+      `Hello Shaahid Hotel, I want to pay the deposit.`,
       `Booking Ref: ${created.bookingReference}`,
       `Amount: ${formatETB(payableNow)}`,
       `Method: ${methodName}`,
@@ -499,7 +501,7 @@ export function BookingFlow({
                   <span className="inline-flex items-center justify-center w-8 h-8 rounded-xl bg-white/5 border border-white/10">
                     <Sparkles className="w-4 h-4 text-[#D4A14C]" />
                   </span>
-                  <span className="truncate">Book Lotus Hotel</span>
+                  <span className="truncate">Book Shaahid Hotel</span>
                 </DialogTitle>
                 <p className="text-xs sm:text-sm text-[#B8C0D0] mt-1">
                   Fast booking + Ethiopian payment options (receipt verification)
