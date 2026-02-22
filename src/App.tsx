@@ -102,12 +102,38 @@ function NavBar({
         <div className="bg-[#D4A14C]/10 border-b border-[#D4A14C]/20">
           <div className="w-full px-4 lg:px-8 py-2 flex justify-between items-center text-xs">
             <div className="flex items-center gap-4 text-[#B8C0D0]">
+              <div className="hidden md:flex items-center gap-3">
+                <a
+                  href={`tel:${hotelInfo.phone}`}
+                  className="flex items-center gap-1 hover:text-[#D4A14C] transition-colors"
+                >
+                  <Phone className="w-3 h-3" />
+                  <span>{hotelInfo.phone}</span>
+                  <span className="text-[#B8C0D0]/60 text-[10px]">(mobile)</span>
+                </a>
+                <span className="text-[#B8C0D0]/30">|</span>
+                <a
+                  href={`tel:${hotelInfo.phone2}`}
+                  className="flex items-center gap-1 hover:text-[#D4A14C] transition-colors"
+                >
+                  <span>{hotelInfo.phone2}</span>
+                  <span className="text-[#B8C0D0]/60 text-[10px]">(mobile)</span>
+                </a>
+                <span className="text-[#B8C0D0]/30">|</span>
+                <a
+                  href={`tel:${hotelInfo.phone3}`}
+                  className="flex items-center gap-1 hover:text-[#D4A14C] transition-colors"
+                >
+                  <span>{hotelInfo.phone3}</span>
+                  <span className="text-[#B8C0D0]/60 text-[10px]">(mobile)</span>
+                </a>
+              </div>
               <a
                 href={`tel:${hotelInfo.phone}`}
-                className="flex items-center gap-1 hover:text-[#D4A14C] transition-colors"
+                className="flex items-center gap-1 hover:text-[#D4A14C] transition-colors md:hidden"
               >
                 <Phone className="w-3 h-3" />
-                <span className="hidden sm:inline">{hotelInfo.phone}</span>
+                <span>Call Us</span>
               </a>
               <a
                 href={`https://wa.me/${WHATSAPP_NUMBER}`}
@@ -237,11 +263,10 @@ function HeroSection({ onBookClick }: { onBookClick: () => void }) {
                 Premium Hotel in Jijiga
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-                Experience the <span className="text-[#D4A14C]">Essence</span> of Hospitality
+                Experience Jigjiga best hotel
               </h1>
               <p className="text-lg text-[#B8C0D0] mb-8">
-                Modern comfort meets warm Ethiopian hospitality. Premium rooms, authentic Somali cuisine, and world-class
-                service in the heart of Jijiga.
+                At Shaahid Hotel, every detail is designed to offer you comfort, elegance, and an unforgettable experience.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-8">
@@ -569,7 +594,17 @@ function LocationSection() {
                 </div>
                 <div>
                   <p className="text-white font-medium">Phone</p>
-                  <p className="text-[#B8C0D0]">{hotelInfo.phone}</p>
+                  <div className="space-y-1">
+                    <a href={`tel:${hotelInfo.phone}`} className="block text-[#B8C0D0] hover:text-[#D4A14C] transition-colors">
+                      {hotelInfo.phone} <span className="text-[#B8C0D0]/60 text-xs">(mobile)</span>
+                    </a>
+                    <a href={`tel:${hotelInfo.phone2}`} className="block text-[#B8C0D0] hover:text-[#D4A14C] transition-colors">
+                      {hotelInfo.phone2} <span className="text-[#B8C0D0]/60 text-xs">(mobile)</span>
+                    </a>
+                    <a href={`tel:${hotelInfo.phone3}`} className="block text-[#B8C0D0] hover:text-[#D4A14C] transition-colors">
+                      {hotelInfo.phone3} <span className="text-[#B8C0D0]/60 text-xs">(mobile)</span>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -578,7 +613,9 @@ function LocationSection() {
                 </div>
                 <div>
                   <p className="text-white font-medium">Email</p>
-                  <p className="text-[#B8C0D0]">{hotelInfo.email}</p>
+                  <a href={`mailto:${hotelInfo.email}`} className="text-[#B8C0D0] hover:text-[#D4A14C] transition-colors">
+                    {hotelInfo.email}
+                  </a>
                 </div>
               </div>
             </div>
@@ -739,7 +776,25 @@ function Footer({ onNavigate }: { onNavigate: (page: string) => void }) {
                   className="flex items-center gap-2 text-sm text-[#B8C0D0] hover:text-[#D4A14C]"
                 >
                   <Phone className="w-4 h-4 text-[#D4A14C]" />
-                  {hotelInfo.phone}
+                  {hotelInfo.phone} <span className="text-[#B8C0D0]/60 text-xs">(mobile)</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`tel:${hotelInfo.phone2}`}
+                  className="flex items-center gap-2 text-sm text-[#B8C0D0] hover:text-[#D4A14C]"
+                >
+                  <Phone className="w-4 h-4 text-[#D4A14C]" />
+                  {hotelInfo.phone2} <span className="text-[#B8C0D0]/60 text-xs">(mobile)</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`tel:${hotelInfo.phone3}`}
+                  className="flex items-center gap-2 text-sm text-[#B8C0D0] hover:text-[#D4A14C]"
+                >
+                  <Phone className="w-4 h-4 text-[#D4A14C]" />
+                  {hotelInfo.phone3} <span className="text-[#B8C0D0]/60 text-xs">(mobile)</span>
                 </a>
               </li>
               <li>
@@ -1152,8 +1207,17 @@ function App() {
                       </div>
                       <div>
                         <h3 className="text-white font-semibold mb-1">Phone</h3>
-                        <p className="text-[#B8C0D0]">{hotelInfo.phone}</p>
-                        <p className="text-[#B8C0D0]">{hotelInfo.phone2}</p>
+                        <div className="space-y-1">
+                          <a href={`tel:${hotelInfo.phone}`} className="block text-[#B8C0D0] hover:text-[#D4A14C] transition-colors">
+                            {hotelInfo.phone} <span className="text-[#B8C0D0]/60 text-xs">(mobile)</span>
+                          </a>
+                          <a href={`tel:${hotelInfo.phone2}`} className="block text-[#B8C0D0] hover:text-[#D4A14C] transition-colors">
+                            {hotelInfo.phone2} <span className="text-[#B8C0D0]/60 text-xs">(mobile)</span>
+                          </a>
+                          <a href={`tel:${hotelInfo.phone3}`} className="block text-[#B8C0D0] hover:text-[#D4A14C] transition-colors">
+                            {hotelInfo.phone3} <span className="text-[#B8C0D0]/60 text-xs">(mobile)</span>
+                          </a>
+                        </div>
                       </div>
                     </div>
 
@@ -1163,7 +1227,9 @@ function App() {
                       </div>
                       <div>
                         <h3 className="text-white font-semibold mb-1">Email</h3>
-                        <p className="text-[#B8C0D0]">{hotelInfo.email}</p>
+                        <a href={`mailto:${hotelInfo.email}`} className="text-[#B8C0D0] hover:text-[#D4A14C] transition-colors">
+                          {hotelInfo.email}
+                        </a>
                       </div>
                     </div>
                   </div>
